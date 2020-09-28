@@ -1,0 +1,21 @@
+# Create a script that a user questions in the command line. The script should follow the outlined specs.
+# miles to drive
+# gallons-per-mile usage of the car
+# price per gallon of fuel
+# Caluclate the cost of the trip and display it to the user in the command line.
+
+
+
+# travel distance 100 miles
+miles = int(input('How many miles did you drive?: '))
+# fuel consumption 30 miles per gallon
+fuel = int(input('How many miles to the gallon does your vehicle get?: '))
+# Price per gallon $1.20 per gallon
+price = float(input('How much was the cost of fuel per gallon?: '))
+
+fuel_needed = miles / fuel
+
+fuel_cost = fuel_needed * price
+
+print(f'your trip costed you ${fuel_cost}')
+
